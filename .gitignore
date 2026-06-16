@@ -1,0 +1,27 @@
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Local files
+node_modules/
+*.log
+.env
+.env.local
+
+# Cache
+.cache/
+dist/
+
+# Media files (uncomment if you want to ignore images)
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
