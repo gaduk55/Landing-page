@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MAWAR TOTO - Bandar TOTO Macau Paling Banyak Peminat">
+<meta name="keywords" content="mawar toto, toto macau, bandar terpercaya">
+<title>MAWAR TOTO - Bandar TOTO Macau</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1a0000 0%, #2d0000 50%, #1a0000 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Animated Background Grid */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 0, 0, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: bgmove 15s linear infinite;
+    z-index: -2;
+}
+
+@keyframes bgmove {
+    from { transform: translateY(0); }
+    to { transform: translateY(20px); }
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.05), transparent, rgba(255, 0, 0, 0.05));
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Floating Glow Effects */
+.glow {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
+    filter: blur(100px);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.glow1 {
+    top: -100px;
+    left: -100px;
+}
+
+.glow2 {
+    bottom: -100px;
+    right: -100px;
+}
+
+/* Combined Banner Section */
+.combined-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin: 40px 0;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #ff0000;
+    border-radius: 25px;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 0, 0.4),
+        0 0 40px rgba(255, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 0, 0, 0.1);
+}
+
+.logo-section {
+    text-align: center;
+}
+
+.logo-section img {
+    width: 100%;
+    max-width: 350px;
+    filter: drop-shadow(0 0 15px #ff0000) drop-shadow(0 0 30px rgba(255, 0, 0, 0.6));
+    animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+.content-section {
+    color: #fff;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 900;
+    background: linear-gradient(45deg, #ff0000, #ff6a00, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #ffff00;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.benefits {
+    background: rgba(255, 0, 0, 0.1);
+    border-left: 3px solid #ff0000;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.benefit-item::before {
+    content: "★";
+    color: #ffff00;
+    font-size: 20px;
+    margin-right: 12px;
+    text-shadow: 0 0 10px #ffff00;
+}
+
+/* Bonus Badges */
+.bonuses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.bonus-badge {
+    background: linear-gradient(135deg, #ff0000, #ff6a00);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #ffff00;
+}
+
+.bonus-value {
+    font-size: 20px;
+    color: #ffff00;
+    font-weight: 900;
+    margin: 5px 0;
+}
+
+/* Deposit Info */
+.deposit-info {
+    background: rgba(255, 255, 0, 0.1);
+    border: 2px solid #ffff00;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.deposit-info p {
+    font-size: 18px;
+    color: #ffff00;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* Call to Action Buttons */
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.btn-login {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ffff00;
+    border: 2px solid #ffff00;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+}
+
+.btn-login:hover {
+    background: #ffff00;
+    color: #000;
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.8);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.btn-daftar {
+    background: linear-gradient(45deg, #ff0000, #ff6a00);
+    color: #fff;
+    border: 2px solid #ffff00;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+.btn-daftar:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 15px rgba(255, 255, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .combined-banner {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    .button-group {
+        grid-template-columns: 1fr;
+    }
+
+    .bonuses {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-section img {
+        max-width: 250px;
+    }
+}
+
+/* Animation Pulse */
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); }
+    50% { box-shadow: 0 0 30px rgba(255, 0, 0, 0.8); }
+}
+
+.combined-banner {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<div class="container">
+
+    <!-- Combined Banner Section -->
+    <div class="combined-banner">
+        
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="logo.png" alt="MAWAR TOTO Logo" loading="lazy">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <div class="title">BANDAR TOTO MACAU</div>
+            <div class="subtitle">PALING BANYAK PEMINAT</div>
+            <div class="tagline">
+                Website resmi terpercaya dengan layanan 24 jam dan transaksi super cepat
+            </div>
+
+            <!-- Benefits -->
+            <div class="benefits">
+                <div class="benefit-item">Minimal Deposit: Rp 5.000</div>
+                <div class="benefit-item">Minimal Withdraw: Rp 25.000</div>
+                <div class="benefit-item">Proses Instan & Terpercaya</div>
+                <div class="benefit-item">Dukungan 24 Jam Non-Stop</div>
+            </div>
+
+            <!-- Bonuses -->
+            <div class="bonuses">
+                <div class="bonus-badge">
+                    BONUS<br>
+                    <span class="bonus-value">5K</span>
+                    FREECHIP APLIKASI
+                </div>
+                <div class="bonus-badge">
+                    BONUS EXTRA<br>
+                    <span class="bonus-value">5%</span>
+                    DEPOSIT
+                </div>
+            </div>
+
+            <!-- Deposit Info -->
+            <div class="deposit-info">
+                <p>💰 MINIMAL DEPOSIT Rp 5.000</p>
+                <p>💸 MINIMAL WITHDRAW Rp 25.000</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Call to Action Buttons -->
+    <div class="button-group">
+        <a href="https://mawartotonaruto.com/login" class="btn btn-login">
+            🔐 LOGIN
+        </a>
+        <a href="https://mawartotonaruto.com/register?referral_code=rahman32" class="btn btn-daftar">
+            📝 DAFTAR SEKARANG
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 50px; color: #999; font-size: 13px;">
+        <p>© 2026 <span style="color: #ff0000; font-weight: bold;">MAWAR TOTO</span> - All Rights Reserved</p>
+        <p>Layanan Resmi Terpercaya Sejak 2026</p>
+    </div>
+
+</div>
+
+</body>
+</html>
