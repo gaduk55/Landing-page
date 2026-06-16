@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MAWAR TOTO - Website Resmi Terpercaya untuk Bermain Online">
+<meta name="keywords" content="mawar toto, toto online, permainan terpercaya">
+<meta property="og:title" content="MAWAR TOTO - Website Resmi">
+<meta property="og:image" content="logo.png">
+
+<title>Premium Landing Page - MAWAR TOTO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Orbitron',sans-serif;
+    min-height:100vh;
+    color:#fff;
+    background:
+    radial-gradient(circle at center,#1b0000 0%,#000 70%);
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(rgba(255,0,0,.25) 1px, transparent 1px);
+    background-size:15px 15px;
+    animation:bgmove 12s linear infinite;
+    z-index:-2;
+}
+
+@keyframes bgmove{
+    from{transform:translateY(0);}
+    to{transform:translateY(15px);}
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(
+    rgba(255,0,0,.05),
+    transparent,
+    rgba(255,0,0,.05));
+    z-index:-1;
+}
+
+.container{
+    width:100%;
+    max-width:520px;
+    margin:auto;
+    padding:20px;
+}
+
+/* Logo */
+
+.logo{
+    text-align:center;
+    margin-top:25px;
+}
+
+.logo img{
+    width:280px;
+    max-width:100%;
+    filter:
+    drop-shadow(0 0 10px red)
+    drop-shadow(0 0 25px red);
+}
+
+/* Tagline */
+
+.tagline{
+    text-align:center;
+    margin:15px 0 25px;
+    color:#ddd;
+    letter-spacing:4px;
+    font-size:15px;
+}
+
+/* Banner */
+
+.banner{
+    position:relative;
+    overflow:hidden;
+    border-radius:25px;
+    border:2px solid #ff0000;
+    box-shadow:
+    0 0 15px red,
+    0 0 35px rgba(255,0,0,.6);
+}
+
+.banner img{
+    width:100%;
+    display:block;
+}
+
+.banner::before{
+    content:"";
+    position:absolute;
+    top:-150%;
+    left:-40%;
+    width:60%;
+    height:400%;
+    background:
+    linear-gradient(
+    transparent,
+    rgba(255,255,255,.35),
+    transparent);
+    transform:rotate(25deg);
+    animation:shine 5s infinite;
+}
+
+@keyframes shine{
+    100%{
+        left:150%;
+    }
+}
+
+/* Bonus Badge */
+
+.badge{
+    position:absolute;
+    right:15px;
+    top:15px;
+    background:#ff0000;
+    color:#fff;
+    padding:8px 15px;
+    border-radius:12px;
+    font-size:12px;
+    font-weight:bold;
+    box-shadow:0 0 15px red;
+    z-index:10;
+}
+
+/* Running Text */
+
+.marquee{
+    margin-top:15px;
+    overflow:hidden;
+    border:1px solid red;
+    border-radius:10px;
+    background:#110000;
+    padding:10px 0;
+}
+
+.marquee span{
+    display:inline-block;
+    white-space:nowrap;
+    animation:scroll 15s linear infinite;
+    color:#ff4444;
+}
+
+@keyframes scroll{
+    from{transform:translateX(100%);}
+    to{transform:translateX(-100%);}
+}
+
+/* Buttons */
+
+.btn{
+    display:block;
+    width:100%;
+    margin-top:25px;
+    padding:25px;
+    text-align:center;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:900;
+    letter-spacing:5px;
+    border-radius:20px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.login{
+    color:#ff0000;
+    background:#050505;
+    border:2px solid #ff0000;
+    box-shadow:0 0 15px rgba(255,0,0,.5);
+}
+
+.login:hover{
+    transform:translateY(-3px);
+    background:#ff0000;
+    color:#fff;
+    box-shadow:
+    0 0 15px red,
+    0 0 35px red;
+}
+
+.daftar{
+    background:linear-gradient(45deg,#ff0000,#ff6a00);
+    color:white;
+    border:none;
+    box-shadow:
+    0 0 15px red,
+    0 0 35px rgba(255,0,0,.8);
+}
+
+.daftar:hover{
+    transform:translateY(-3px) scale(1.02);
+}
+
+/* Info Box */
+
+.info{
+    margin-top:20px;
+    background:#080808;
+    border:1px solid rgba(255,0,0,.4);
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    color:#ccc;
+    font-size:14px;
+}
+
+/* Footer */
+
+.footer{
+    text-align:center;
+    margin:35px 0;
+    color:#999;
+    font-size:13px;
+}
+
+.footer a{
+    color:#ff0000;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+
+/* Floating Glow */
+
+.glow{
+    position:fixed;
+    width:200px;
+    height:200px;
+    background:red;
+    filter:blur(120px);
+    opacity:.18;
+    border-radius:50%;
+    z-index:-1;
+}
+
+.glow1{
+    top:-50px;
+    left:-50px;
+}
+
+.glow2{
+    bottom:-50px;
+    right:-50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<div class="container">
+
+    <div class="logo">
+        <img src="logo.png" alt="Logo MAWAR TOTO" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22280%22 height=%22280%22%3E%3Crect fill=%22%23333%22 width=%22280%22 height=%22280%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23ff0000%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2224%22 font-weight=%22bold%22%3ELOGO%3C/text%3E%3C/svg%3E'">
+    </div>
+
+    <div class="tagline">
+        WEBSITE RESMI TERPERCAYA
+    </div>
+
+    <div class="banner">
+        <div class="badge">
+            BONUS MEMBER BARU
+        </div>
+        <img src="banner.jpg" alt="Banner Promo MAWAR TOTO" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22520%22 height=%22300%22%3E%3Crect fill=%22%23222%22 width=%22520%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23ff0000%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2232%22 font-weight=%22bold%22%3EBANNER%3C/text%3E%3C/svg%3E'">
+    </div>
+
+    <div class="marquee">
+        <span>
+            Selamat Datang • Promo Terbaru • Layanan 24 Jam • Transaksi Cepat • Member Aktif Setiap Hari
+        </span>
+    </div>
+
+    <a href="https://mawartotonaruto.com/login" class="btn login">
+        LOGIN
+    </a>
+
+    <a href="https://mawartotonaruto.com/register?referral_code=rahman32" class="btn daftar">
+        DAFTAR
+    </a>
+
+    <div class="info">
+        Minimal Deposit Rp 5.000 • Minimal Withdraw Rp 25.000
+    </div>
+
+    <div class="footer">
+        © 2026 <a href="#">MAWAR TOTO</a><br>
+        All Rights Reserved
+    </div>
+
+</div>
+
+</body>
+</html>
